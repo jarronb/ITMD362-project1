@@ -262,11 +262,16 @@ input[type=date] {
 input[type=submit] {
     background: #7A7A7A;
     color: white;
+    border: none;
+    width: 50%;
+    font-size: 22px; /* 18 / 16 = 1.125 */
+    font-weight: bold;
+    float: right;
 }
-input:focus {
+/* input:focus {
     background: #ccc;
-    border: 5px solid black;
-}
+    /* border: 5px solid black; */
+} */
 
 /* Layout Styles */
 /*
