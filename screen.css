@@ -185,6 +185,10 @@ html {
   line-height: 1.222em; /* 22 / 18 = 1.222*/
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   background: #F0F8FF;
+  background: url(media/space.jpg);
+  background-position: center;
+  background-size: cover;
+  /* background: rgba(34,146,174, 1); */
 }
 body {
   /* padding-top: 1.222em; /* 22 / 18 = 1.222*/
