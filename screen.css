@@ -307,23 +307,28 @@ span.warning {
 }
 
 @media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 30px;
+  }
   input,
   label {
     margin-bottom: 11px;
   }
 
-  form {
-    margin-left: 250px;
-    margin-right: 250px;
+   form {
     padding: 10px 50px;
-    background: rgba(30,144,255, .75);
-    box-shadow: 10px  10px 50px #000000;
   }
 
-  input[type=submit] {
-      background: #7A7A7A;
-      width: 25%;
-      float: right;
-      border: 2px solid black;
+  body {
+  padding-left: 250px;
+  padding-right: 250px;
+  margin-bottom: -500px;
   }
+
 }
