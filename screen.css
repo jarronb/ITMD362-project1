@@ -198,7 +198,13 @@ body {
 }
 
 h1 {
+  font-size: 1.777em; /* 31.984 / 18 = 1.777*/
+  line-height: 1.032em; /* 33 / 31.984 = 1.032 */
+  padding-bottom: 0.688em; /* 22 / 31.984 = 0.688*/
+  font-weight: bold;
   color: #DB4E58;
+
+}
 h2 {
   font-size: 28px;
   line-height: 1.032em; /* 33 / 31.984 = 1.032 */
@@ -206,6 +212,9 @@ h2 {
 
 }
 p {
+  font-size: 22px; /* 18 / 16 = 1.125 */
+  padding-bottom: 88px;
+  font-weight: bold;
   line-height: 33px;
 }
 a {
