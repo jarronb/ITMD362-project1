@@ -223,6 +223,9 @@ a {
 }
 form {
   padding: 16px 50px;
+  box-sizing: border-box;
+  border: 2px solid rgba(30,144,255, 1);
+  /* box-shadow: 10px  10px 50px white; */
 }
 label {
   display: block;
@@ -239,11 +242,16 @@ label {
 input {
   box-sizing: border-box;
   width: 100%;
-  border: 0;
+  border: 2px solid rgba(30,144,255, .7);
+  border-top: none;
+  border-right: none;
   cursor: pointer;
   border-radius: 0.277em;
   line-height: 1;
+  padding: 11px;
+  background: none;
   color: #DB4E58;
+}
 input::placeholder {
   color: #DB4E58;
   opacity: 1;
