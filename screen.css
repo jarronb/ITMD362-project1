@@ -183,7 +183,7 @@ textarea {
 html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.833rem; /* NOTE:  33 / 18 = 1.833 */
-  font-family: "Barlow Condensed","Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: "Barlow Condensed", "Palatino Linotype", "Book Antiqua", Palatino, serif;
   color: white;
   background: url(media/space.jpg);
   background-position: center;
@@ -227,7 +227,7 @@ label {
   color: white;
 }
 li {
-padding-bottom: 1.222rem; /* 22 / 18 = 1.222*/
+  padding-bottom: 1.222rem; /* 22 / 18 = 1.222*/
 }
 input,
 label {
@@ -237,7 +237,7 @@ label {
 input {
   box-sizing: border-box;
   width: 100%;
-  border: 0.111rem solid rgba(30,144,255, .7); /* NOTE: 2 / 18 = .111 */
+  border: 0.111rem solid rgba(30,144,255, 0.7); /* NOTE: 2 / 18 = .111 */
   border-top: none;
   border-right: none;
   cursor: pointer;
@@ -251,10 +251,10 @@ input::placeholder {
   color: #DB4E58;
   opacity: 1;
 }
-input[type=date] {
+input[type="date"] {
   color: #DB4E58;
 }
-input[type=submit] {
+input[type="submit"] {
   font-size: 0.888rem; /* NOTE: .888 */
   background: #7A7A7A;
   color: white;
@@ -305,9 +305,9 @@ span.warning {
 
 @media screen and (min-width: 55.555rem /* NOTE: 1000px */) {
   body {
-  padding-left: 15%; /* NOTE: 250 / 18 = 13.888 */
-  padding-right: 15%; /* NOTE: 250 / 18 = 13.888 */
-  margin-bottom: -27.777rem; /* NOTE: 500 / 18 = 27.777 */
+    padding-left: 15%; /* NOTE: 250 / 18 = 13.888 */
+    padding-right: 15%; /* NOTE: 250 / 18 = 13.888 */
+    margin-bottom: -27.777rem; /* NOTE: 500 / 18 = 27.777 */
   }
 
 }
