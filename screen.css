@@ -192,8 +192,8 @@ html {
 }
 body {
   padding-top: 2.444rem; /* NOTE: 44 / 18 = 2.444 */
-  padding-right: 1.222rem; /* 22 / 18 = 1.222*/
-  padding-left: 1.222rem; /* 22 / 18 = 1.222*/
+  padding-right: 10%; /* 22 / 18 = 1.222*/
+  padding-left: 10%; /* 22 / 18 = 1.222*/
   padding-bottom: 15.888rem; /* NOTE: 286 / 18 = 15.888 */
 }
 h1 {
@@ -215,7 +215,9 @@ a {
   color: #DB4E58;
 }
 form {
-  padding: 0.888rem 2.777rem; /* NOTE: 16 / 18 = .888 */ /* NOTE: 50 / 18 = 2.777 */
+  padding: 0.888rem 0; /* NOTE: 16 / 18 = .888 */
+  padding-left: 10%;
+  padding-right: 5%;
   box-sizing: border-box;
   border: 0.111rem solid rgba(30,144,255, 1); /* NOTE: 2 / 18 = .111 */
   /* box-shadow: 10px  10px 50px white; */
@@ -301,10 +303,10 @@ span.warning {
   width: inherit;
 }
 
-@media screen and (min-width: 55.555rem) {
+@media screen and (min-width: 55.555rem /* NOTE: 1000px */) {
   body {
-  padding-left: 13.888rem; /* NOTE: 250 / 18 = 13.888 */
-  padding-right: 13.888rem; /* NOTE: 250 / 18 = 13.888 */
+  padding-left: 15%; /* NOTE: 250 / 18 = 13.888 */
+  padding-right: 15%; /* NOTE: 250 / 18 = 13.888 */
   margin-bottom: -27.777rem; /* NOTE: 500 / 18 = 27.777 */
   }
 
