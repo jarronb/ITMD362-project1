@@ -289,7 +289,12 @@ input[type=submit] {
   2. Influenced by JavaScript
   3. Organized by Base, Layout, Module, State
 */
-
+.wf-active html {
+  font-weight: 600;
+}
+.wf-active h1 {
+  font-weight: 700;
+}
 span.warning {
   color: red;
   font-weight: bold;
