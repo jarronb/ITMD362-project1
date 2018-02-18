@@ -191,40 +191,33 @@ html {
   /* background: rgba(34,146,174, 1); */
 }
 body {
-  padding-top: 44px; /* 22 / 18 = 1.222*/
-  padding-right: 1.222em; /* 22 / 18 = 1.222*/
-  padding-left: 1.222em; /* 22 / 18 = 1.222*/
-  padding-bottom: 286px;
+  padding-top: 2.444rem; /* NOTE: 44 / 18 = 2.444 */
+  padding-right: 1.222rem; /* 22 / 18 = 1.222*/
+  padding-left: 1.222rem; /* 22 / 18 = 1.222*/
+  padding-bottom: 15.888rem; /* NOTE: 286 / 18 = 15.888 */
 }
-
 h1 {
-  font-size: 1.777em; /* 31.984 / 18 = 1.777*/
-  line-height: 1.032em; /* 33 / 31.984 = 1.032 */
-  padding-bottom: 0.688em; /* 22 / 31.984 = 0.688*/
+  font-size: 1.833rem; /* NOTE:  33 / 18 = 1.833 */
+  line-height: 1.833rem; /* NOTE:  33 / 18 = 1.833 */
+  padding-bottom: 1.222rem; /* 22 / 18 = 1.222*/
   font-weight: bold;
   color: #DB4E58;
 
 }
-h2 {
-  font-size: 28px;
-  line-height: 1.032em; /* 33 / 31.984 = 1.032 */
-  padding-bottom: 0.688em; /* 22 / 31.984 = 0.688*/
-
-}
 p {
-  font-size: 22px; /* 18 / 16 = 1.125 */
-  padding-bottom: 88px;
+  font-size: 1.222rem; /* 22 / 18 = 1.222*/
+  padding-bottom: 4.888rem; /* NOTE:  88 / 18 = 4.888 */
   font-weight: bold;
-  line-height: 33px;
+  line-height: 1.833rem; /* NOTE:  33 / 18 = 1.833 */
 }
 a {
   text-decoration: none;
   color: #DB4E58;
 }
 form {
-  padding: 16px 50px;
+  padding: 0.888rem 2.777rem; /* NOTE: 16 / 18 = .888 */ /* NOTE: 50 / 18 = 2.777 */
   box-sizing: border-box;
-  border: 2px solid rgba(30,144,255, 1);
+  border: 0.111rem solid rgba(30,144,255, 1); /* NOTE: 2 / 18 = .111 */
   /* box-shadow: 10px  10px 50px white; */
 }
 label {
@@ -232,23 +225,23 @@ label {
   color: white;
 }
 li {
-padding-bottom: 1.222em; /* 22 / 18 = 1.222*/
+padding-bottom: 1.222rem; /* 22 / 18 = 1.222*/
 }
 input,
 label {
   display: block;
-  margin-bottom: 11px;
+  margin-bottom: 0.611rem; /* NOTE: 11 / 18 = 0.611 */
 }
 input {
   box-sizing: border-box;
   width: 100%;
-  border: 2px solid rgba(30,144,255, .7);
+  border: 0.111rem solid rgba(30,144,255, .7); /* NOTE: 2 / 18 = .111 */
   border-top: none;
   border-right: none;
   cursor: pointer;
   border-radius: 0.277em;
   line-height: 1;
-  padding: 11px;
+  padding: 0.611rem; /* NOTE: 11 / 18 = .611 */
   background: none;
   color: #DB4E58;
 }
@@ -260,18 +253,19 @@ input[type=date] {
   color: #DB4E58;
 }
 input[type=submit] {
-    background: #7A7A7A;
-    color: white;
-    border: none;
-    width: 50%;
-    font-size: 22px; /* 18 / 16 = 1.125 */
-    font-weight: bold;
-    float: right;
-}
 /* input:focus {
     background: #ccc;
     /* border: 5px solid black; */
 } */
+  font-size: 0.888rem; /* NOTE: .888 */
+  background: #7A7A7A;
+  color: white;
+  border: none;
+  width: 50%;
+  font-weight: bold;
+  float: right;
+}
+
 
 /* Layout Styles */
 /*
@@ -306,29 +300,13 @@ span.warning {
   width: inherit;
 }
 
-@media screen and (min-width: 1000px) {
-  html {
-    font-size: 22px;
-  }
-  h1 {
-    font-size: 40px;
-  }
-  p {
-    font-size: 30px;
-  }
-  input,
-  label {
-    margin-bottom: 11px;
-  }
-
-   form {
-    padding: 10px 50px;
-  }
+}
+@media screen and (min-width: 55.555rem) {
 
   body {
-  padding-left: 250px;
-  padding-right: 250px;
-  margin-bottom: -500px;
+  padding-left: 13.888rem; /* NOTE: 250 / 18 = 13.888 */
+  padding-right: 13.888rem; /* NOTE: 250 / 18 = 13.888 */
+  margin-bottom: -27.777rem; /* NOTE: 500 / 18 = 27.777 */
   }
 
 }
