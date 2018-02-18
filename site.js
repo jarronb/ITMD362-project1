@@ -1,43 +1,47 @@
 $.noConflict();
 (function($) {
   $('#signup-form').on('submit', function(e) {
-    e.preventDefault(); //No id value in url
+    var user = {
+      email: $('#email').val(),
+      email_pattern: /^[^\s@]+@[^\s@]+$/,
+      name: $('#name').val(),
+      valid: {
+        email: false,
+        name: false
+      }
+    };
+
+    e.preventDefault(); // No id value in url
 
     console.log("start");
-    var email = {
-    val: $('#email').val(),
-    pattern: /^[^\s@]+@[^\s@]+$/
-    }
-    var valid = {
-      email: false,
-      name: false
-    }
 
-    if (((email.pattern.test(email.val)) === true) || (email.val.length === 0)) {
-      valid.email = true;
-      console.log("email:" + valid.email);
+    if (((user.email_pattern.test(user.email)) === true) || (user.email.length === 0)) {
+      user.valid.email = true;
+      console.log("email:" + user.valid.email);
     } else {
       $('#form-item-email').prepend('<span class="warning">Please enter a valid email!');
       $('#email').css('background', '#D24D57');
+      $('#name').css('color', 'white');
     }
-      console.log("Email");
+    console.log("Email");
 
-    if (($('#name').val().length <= 0) || ($('#name').val().length === null)) {
+    if ((user.name.length <= 0) || (user.name.length === null)) {
       console.log("here");
       if ($('span.warning').length <= 0) {
-      $('#form-item-name').prepend('<span class="warning">Please enter your name!');
-      $('#name').css('background', '#D24D57');
+        $('#form-item-name').prepend('<span class="warning">Please enter your name!');
+        $('#name').css('background', '#D24D57');
+        $('#name').css('color', 'white');
       }
     } else {
       console.log("Else name");
-      valid.name = true;
-      console.log("name:" + valid.name);
-      }
+      user.valid.name = true;
+      console.log("name:" + user.valid.name);
+    }
 
-    if ((valid.email === true) && (valid.name === true)) {
-      $('#header.para').replaceWith('<p>Thank you ' + $('#name').val() + ', for signing up.' +
-      'Please confirm your email ' + email.val + '.</p>');
+    if ((user.valid.email === true) && (user.valid.name === true)) {
+      $('#header.para').replaceWith('<p>Thank you ' + name + ', for signing up.' +
+      'Please confirm your email ' + user.email.val + '.</p>');
       window.location.href = "congratulations/index.html";
     }
-});
+  });
 })(jQuery);
