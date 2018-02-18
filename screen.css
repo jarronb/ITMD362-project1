@@ -253,10 +253,6 @@ input[type=date] {
   color: #DB4E58;
 }
 input[type=submit] {
-/* input:focus {
-    background: #ccc;
-    /* border: 5px solid black; */
-} */
   font-size: 0.888rem; /* NOTE: .888 */
   background: #7A7A7A;
   color: white;
