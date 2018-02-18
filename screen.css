@@ -182,7 +182,7 @@ textarea {
 
 html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
-  line-height: 1.222em; /* 22 / 18 = 1.222*/
+  line-height: 1.833rem; /* NOTE:  33 / 18 = 1.833 */
   font-family: "Barlow Condensed","Palatino Linotype", "Book Antiqua", Palatino, serif;
   color: white;
   background: url(media/space.jpg);
