@@ -39,9 +39,8 @@ $.noConflict();
     }
 
     if ((user.valid.email === true) && (user.valid.name === true)) {
-      $('#header.para').replaceWith('<p>Thank you ' + name + ', for signing up.' +
-      'Please confirm your email ' + user.email.val + '.</p>');
-      window.location.href = "congratulations/index.html";
+      $('#form-content').replaceWith('<p>Thank you ' + user.name + ', for signing up.' +
+      'Please confirm your email ' + user.email + '.</p>');
     }
   });
 })(jQuery);
